@@ -2,7 +2,7 @@
 
 
 
-body{
+:root{
     background: radial-gradient(white, rgb(11, 106, 230));
 }
 
@@ -277,25 +277,197 @@ aside img {
 
 
 .person1, .person2, .person3, .person4 {
-    position: relative; /* Positionnement relatif pour l'image */
+    position: relative; 
 }
 
 .social-icons {
-    display: flex; /* Affiche les icônes comme un flex container */
+    display: flex;
     position: absolute;
-    bottom: 10px; /* Positionne les icônes en bas de l'image */
-    left: 70%; /* Centre horizontalement */
-    transform: translateX(-50%); /* Centre exactement */
-    opacity: 0; /* Masque les icônes par défaut */
-    transition: opacity 1s ease, transform 1s ease; /* Transition douce */
-    transform: translateY(10px); /* Décale légèrement vers le bas */
-    gap: 5px; /* Espace entre les icônes */
+    bottom: 10px; 
+    left: 70%; 
+    transform: translateX(-50%); 
+    opacity: 0; 
+    transition: opacity 1s ease, transform 1s ease; 
+    transform: translateY(10px); 
+    gap: 5px; 
 }
 
 .person1:hover .social-icons,
 .person2:hover .social-icons,
 .person3:hover .social-icons,
 .person4:hover .social-icons {
-    opacity: 1; /* Rend les icônes visibles */
-    transform: translateY(0); /* Ramène les icônes à leur position initiale */
+    opacity: 1; 
+    transform: translateY(0); 
 }
+
+.parallax {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/img/parallax.png');
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax h2{
+    font-family: "Poppins";
+    font-size: 60px;
+    color: white;
+}
+
+.parallax p{
+    font-size: 20px;
+    color: white;
+}
+
+input{
+    font-size: 30px;
+    color: white;
+    background-color: transparent;
+}
+
+#container2{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    
+    justify-content: center;
+    align-items: center;
+    gap: 20px;  
+}
+
+.Blog{
+    background:transparent;
+    width: 400px;
+    height: 800px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 50px;
+}
+
+.entete img{
+    height: 300px;
+}
+
+.entete{
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    padding: 30px;
+}
+
+
+.txt h1{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.txt p{
+    font-size: 14px;
+    color: grey;
+    font-weight: 300;
+}
+
+.txt a{
+    font-size: 20px;
+}
+
+
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 300px; 
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: opacity 0.3s ease; 
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+
+.image-container:hover .overlay {
+    opacity: 1; 
+}
+
+.image-container:hover img {
+    opacity: 0.7; 
+}
+
+.author, .date {
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#scrolltop {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.5s ease-in;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 20%;
+    }
+    .top-button {
+    text-decoration: none;
+    cursor: pointer;
+    padding: 30px;
+    color: #222;}
