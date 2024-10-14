@@ -378,6 +378,8 @@ input{
 
 
 
+
+
 .image-container {
     position: relative;
     width: 100%;
@@ -417,7 +419,7 @@ input{
 
 .author, .date {
     margin: 0;
-    font-size: 14px;
+    font-size: 20px;
     text-align: center;
 }
 
