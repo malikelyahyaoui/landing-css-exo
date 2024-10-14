@@ -3,7 +3,7 @@
 
 
 body{
-    background: radial-gradient(white, rgb(0, 119, 255));
+    background: radial-gradient(white, rgb(11, 106, 230));
 }
 
 
@@ -14,7 +14,7 @@ header{
     margin-top: 20px;
 }
 
-h1{
+header h1{
     color: white;
     font-family: "Poppins";
     position: absolute;
@@ -115,7 +115,7 @@ aside img {
 }
 
 .recherche input::placeholder {
-    color: gray;
+    color: gray; 
 }
 
 .subscribe-button {
@@ -133,4 +133,169 @@ aside img {
 .subscribe-button:hover {
     background-color: darkblue; 
     transform: translateY(-3px); 
+}
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;  
+}
+
+.card{
+    background: radial-gradient(rgba(248, 248, 248, 0.596), rgb(11, 106, 230));
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.card-header{
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-header h1{
+    color: white;
+}
+
+.card-text{
+    padding: 30px;
+}
+
+.card-text h1{
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.card-text p{
+    font-size: 14px;
+    color: white;
+    font-weight: 300;
+}
+
+.card i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    font-size: 50px;
+    color: white;
+}
+
+.card:hover{
+    transform:translateY(-10px) ;
+}
+
+.Haut{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Haut h1{
+    font-family: "Poppins";
+    font-size: 40px;
+}
+
+.Haut p{
+    color: grey;
+}
+
+#equipe{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    text-align: center;  
+
+}
+
+
+#equipe img{
+    height: 300px;
+    width: 300px;
+    border-radius: 200px;
+}
+
+#equipe h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+
+#equipe p{
+    color: rgba(128, 128, 128, 0.678);
+}
+
+.person1 img{
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.person2 img{
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+
+.person3 img{
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+
+.person4 img{
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+
+.person1:hover img{
+    filter: grayscale(100%); 
+    transform: scale(1.1); 
+}
+
+.person2:hover img{
+    filter: grayscale(100%); 
+    transform: scale(1.1); 
+}
+
+.person3:hover img{
+    filter: grayscale(100%); 
+    transform: scale(1.1); 
+}
+
+.person4:hover img{
+    filter: grayscale(100%); 
+    transform: scale(1.1); 
+}
+
+
+.person1, .person2, .person3, .person4 {
+    position: relative; /* Positionnement relatif pour l'image */
+}
+
+.social-icons {
+    display: flex; /* Affiche les icônes comme un flex container */
+    position: absolute;
+    bottom: 10px; /* Positionne les icônes en bas de l'image */
+    left: 70%; /* Centre horizontalement */
+    transform: translateX(-50%); /* Centre exactement */
+    opacity: 0; /* Masque les icônes par défaut */
+    transition: opacity 1s ease, transform 1s ease; /* Transition douce */
+    transform: translateY(10px); /* Décale légèrement vers le bas */
+    gap: 5px; /* Espace entre les icônes */
+}
+
+.person1:hover .social-icons,
+.person2:hover .social-icons,
+.person3:hover .social-icons,
+.person4:hover .social-icons {
+    opacity: 1; /* Rend les icônes visibles */
+    transform: translateY(0); /* Ramène les icônes à leur position initiale */
 }
