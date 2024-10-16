@@ -19,7 +19,6 @@ header h1{
     font-family: "Poppins";
     position: absolute;
     left: 150px;
-    
 }
 
 
@@ -38,7 +37,7 @@ nav a{
  transition: 0.5s;
 }
 
-nav:hover a{
+a:hover {
     transform: translateY(-10px);
 }
 
@@ -200,11 +199,15 @@ aside img {
 
 .Haut h1{
     font-family: "Poppins";
-    font-size: 40px;
+    width: 50%;
+    text-align: center;
 }
 
 .Haut p{
-    color: grey;
+    color: rgb(73, 73, 73);
+    width: 50%;
+    text-align: left;
+    font-size: 20px;
 }
 
 #equipe{
@@ -276,20 +279,31 @@ aside img {
 }
 
 
+
 .person1, .person2, .person3, .person4 {
     position: relative; 
+    width: 300px; 
 }
 
 .social-icons {
     display: flex;
     position: absolute;
-    bottom: 10px; 
-    left: 70%; 
-    transform: translateX(-50%); 
+    bottom: 160px; 
+    left: 30px; 
     opacity: 0; 
     transition: opacity 1s ease, transform 1s ease; 
     transform: translateY(10px); 
-    gap: 5px; 
+    flex-direction: column; 
+    gap: 5px;
+}
+
+.social-icons div {
+    background: white; 
+    border-radius: 50%; 
+    padding: 5px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
 }
 
 .person1:hover .social-icons,
@@ -300,7 +314,9 @@ aside img {
     transform: translateY(0); 
 }
 
-.parallax {
+
+
+#parallax {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/img/parallax.png');
     height: 1000px;
     display: flex;
@@ -313,21 +329,23 @@ aside img {
     background-size: cover;
 }
 
-.parallax h2{
+#parallax h2{
     font-family: "Poppins";
     font-size: 60px;
     color: white;
 }
 
-.parallax p{
-    font-size: 20px;
+#parallax p{
+    font-size: 30px;
     color: white;
+    width: 70%;
 }
 
 .Get{
     font-size: 30px;
     color: white;
     background-color: transparent;
+    padding: 10px;
 }
 
 #container2{
@@ -426,6 +444,7 @@ aside img {
 #container3{
     display: flex;
     justify-content: center;
+    
     align-items: center;
     background-color: #fff;
     height: 1000px;
@@ -433,8 +452,13 @@ aside img {
     border-bottom: none;
 }
 
+
+.creativity{
+    padding: 50px;
+}
+
 .head{
-    padding-right: 50px;
+    padding: 50px;
 }
 
 .head h1{
@@ -574,13 +598,60 @@ button{
 }
 
 
+footer{
+    background-color:black;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
 
+.rond-container{
+    display: flex;
+    gap:20px;
+}
 
+.rond{
+    background-color: black;
+    height: 40px;
+    width: 40px;
+    border: 1px solid burlywood;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.facebook3{
+    color: burlywood;
+}
 
+.twitter2{
+    color: burlywood;
+}
 
+.linkedin{
+    color: burlywood;
+}
 
+.google{
+    color: burlywood;
+}
+
+.condition{
+    display: flex;
+    gap: 10px;
+}
+
+.condition p{
+    color: burlywood;
+}
+
+.auteur p{
+    color: burlywood;
+}
 
 
 
@@ -611,4 +682,53 @@ button{
     text-decoration: none;
     cursor: pointer;
     padding: 30px;
-    color: #222;}
+    color: #222;
+}
+
+
+@media(max-width: 700px) {
+     .contenu{
+        text-align: center;
+     }
+     .recherche{
+        margin-left: 100px;
+     }
+    .contenu aside {
+        display: none;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+   #parallax h2{
+    text-align: center;
+   }
+
+   .Blog{
+    background: transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    width:100%;
+    height:100%;
+   }
+
+   #container3{
+    display: flex;
+    flex-direction: column;
+   }
+
+   .head{
+    height: 30%;
+    padding: 20px;
+   }
+
+   .creativity img{
+    padding: none;
+    height:100%;
+   }
+}
