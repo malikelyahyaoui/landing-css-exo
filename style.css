@@ -324,7 +324,7 @@ aside img {
     color: white;
 }
 
-input{
+.Get{
     font-size: 30px;
     color: white;
     background-color: transparent;
@@ -423,16 +423,155 @@ input{
     text-align: center;
 }
 
+#container3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    height: 1000px;
+    margin: 0;
+    border-bottom: none;
+}
+
+.head{
+    padding-right: 50px;
+}
+
+.head h1{
+    font-family: "Poppins";
+    font-size: 50px;
+}
+
+.head p{
+    color: grey;
+}
+
+.head tr{
+    font-size: 30px;
+}
+
+.head td{
+    color: grey;
+    padding: 20px;
+}
+
+
+
+table{
+  padding: 50px;
+}
+
+
+
+.Learn{
+    margin: 30px;
+    height: 50px;
+    width:15%;
+    color: white;
+    background-color:rgb(17, 40, 252);
+    border-radius: 10%;
+}
+
+
+#container4 {
+    background-color: #bbbbbbbe;
+    margin: 0;
+    height: 1000px;
+    text-align: center;
+}
 
 
 
 
 
+.head2{
+    padding-top: 30px;
+}
 
 
 
 
+.head2 h1{
+    font-family: "Poppins";
+    
+}
 
+.carte-container {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    flex-wrap: wrap; 
+    gap: 30px;
+    padding: 100px; 
+}
+
+.carte {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 650px;
+    width: 500px;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+
+
+.prix{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.valeur{
+    color: blue;
+    font-size: 40px;
+    font-family: "Poppins";
+}
+
+
+
+.carte:hover{
+    transform:translateY(-10px) ;
+}
+
+
+.carte h1{
+    font-family: "Poppins";
+    padding-top: 10px;
+}
+
+.acces{
+    display: flex;
+    flex-direction: column;
+}
+
+table td{
+    font-size: 20px;
+    padding-bottom:20px ;
+    text-align: left;
+}
+
+
+
+.fa-circle-check{
+    color: green;
+}
+
+
+.fa-circle-xmark{
+    color: red;
+}
+
+
+button{
+    width:70%;
+    height: 50px;
+    color: white;
+    background-color:rgb(17, 40, 252);
+    border-radius: 10%;
+}
 
 
 
